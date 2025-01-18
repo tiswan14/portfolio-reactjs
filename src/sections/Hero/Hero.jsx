@@ -12,6 +12,7 @@ import tiktokLight from "../../assets/tiktok-light.svg";
 import tiktokDark from "../../assets/tiktok-dark.svg";
 // import CV from '../../assets/Tiswan_Ajah_CV.pdf'
 
+
 import { ReactTyped } from "react-typed";
 import { useTheme } from "../../common/ThemeContext.jsx";
 const Hero = () => {
