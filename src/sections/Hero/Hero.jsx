@@ -120,7 +120,7 @@ const Hero = () => {
 
                     <div className='flex justify-center lg:justify-start'>
                         <a
-                            href='#'
+                            href='../../assets/cv/CV-Tiswan.pdf'
                             className='inline-flex items-center gap-3 font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover'
                             style={{
                                 backgroundColor: 'var(--btn-color)',
