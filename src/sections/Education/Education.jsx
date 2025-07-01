@@ -37,7 +37,10 @@ const Education = () => {
 
                 <div className='relative w-full md:max-w-2xl mx-auto mt-12'>
                     {/* Timeline Line */}
-                    <div className='absolute left-6 top-0 bottom-0 w-0.5 bg-blue-500'></div>
+                    <div
+                        className='absolute left-6 top-0 bottom-0 w-0.5'
+                        style={{ backgroundColor: 'var(--btn-color)' }}
+                    ></div>
 
                     {educationHistory.map((edu, index) => (
                         <div
@@ -46,7 +49,12 @@ const Education = () => {
                         >
                             <div className='flex items-start'>
                                 {/* Icon */}
-                                <div className='flex-shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center shadow-lg relative z-10'>
+                                <div
+                                    className='flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center shadow-lg relative z-10'
+                                    style={{
+                                        backgroundColor: 'var(--btn-color)',
+                                    }}
+                                >
                                     <div className='text-white'>{edu.icon}</div>
                                 </div>
 
