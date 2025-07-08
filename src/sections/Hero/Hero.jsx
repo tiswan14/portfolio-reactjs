@@ -15,9 +15,19 @@ const Hero = () => {
             className='min-h-screen flex items-center justify-center px-4 py-12 md:py-8'
             style={{ backgroundColor: 'var(--background-color)' }}
         >
-            <div className='max-w-5xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-20'>
-                {/* Bagian gambar - hanya menyesuaikan ukuran */}
-                <div className='flex-1 flex justify-center lg:justify-end order-1 lg:order-2'>
+            <div
+                className='max-w-5xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-20'
+                data-aos='fade-up'
+                data-aos-delay='100'
+                data-aos-duration='1000'
+            >
+                {/* Bagian Gambar */}
+                <div
+                    className='flex-1 flex justify-center lg:justify-end order-1 lg:order-2'
+                    data-aos='zoom-in'
+                    data-aos-delay='200'
+                    data-aos-duration='1000'
+                >
                     <div className='relative group'>
                         <img
                             className='w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 shadow-2xl group-hover:scale-105 transition-transform duration-300'
@@ -41,12 +51,23 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Bagian teks - hanya menyesuaikan spacing dan ukuran teks */}
+                {/* Bagian Teks */}
                 <div className='flex-1 text-center lg:text-left space-y-6 order-2 lg:order-1'>
-                    <h1 className='text-4xl md:text-5xl mb-4'>Tiswan</h1>
+                    <h1
+                        className='text-4xl md:text-5xl mb-4'
+                        data-aos='fade-right'
+                        data-aos-delay='300'
+                        data-aos-duration='900'
+                    >
+                        Tiswan
+                    </h1>
+
                     <h2
                         className='mb-6 h-16 text-xl md:text-2xl flex items-center justify-center lg:justify-start'
                         style={{ color: 'var(--btn-color)' }}
+                        data-aos='fade-left'
+                        data-aos-delay='400'
+                        data-aos-duration='900'
                     >
                         <ReactTyped
                             strings={[
@@ -61,13 +82,23 @@ const Hero = () => {
                         />
                     </h2>
 
-                    <p className='leading-relaxed text-base md:text-lg max-w-2xl'>
+                    <p
+                        className='leading-relaxed text-base md:text-lg max-w-2xl'
+                        data-aos='fade-up'
+                        data-aos-delay='500'
+                        data-aos-duration='900'
+                    >
                         Enthusiastic about coding, always exploring new
                         technologies, and passionate about problem-solving and
                         innovation.
                     </p>
 
-                    <div className='flex justify-center lg:justify-start space-x-6 py-4'>
+                    <div
+                        className='flex justify-center lg:justify-start space-x-6 py-4'
+                        data-aos='zoom-in'
+                        data-aos-delay='600'
+                        data-aos-duration='1000'
+                    >
                         <a
                             href='https://github.com/tiswan14'
                             target='_blank'
@@ -118,7 +149,12 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <div className='flex justify-center lg:justify-start'>
+                    <div
+                        className='flex justify-center lg:justify-start'
+                        data-aos='fade-up'
+                        data-aos-delay='700'
+                        data-aos-duration='1000'
+                    >
                         <a
                             href='/cv/cv-tiswan.pdf'
                             target='_blank'

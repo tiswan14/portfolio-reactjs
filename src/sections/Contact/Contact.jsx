@@ -16,12 +16,14 @@ const Contact = () => {
 
             <div className='max-w-6xl mx-auto relative z-10'>
                 {/* Header Section */}
-                <div className='text-center mb-16'>
-                    
+                <div
+                    className='text-center mb-16'
+                    data-aos='fade-up'
+                >
                     <h1 className='text-5xl font-bold text-center mb-4 text-[var(--text-color)] bg-gradient-to-r from-[var(--btn-color)] to-purple-600 bg-clip-text'>
                         Get In Touch
                     </h1>
-                    <h4 className='text-xl mt-3 text-[var(--form-text-color)] max-w-3xl mx-auto '>
+                    <h4 className='text-xl mt-3 text-[var(--form-text-color)] max-w-3xl mx-auto'>
                         Have a project in mind or just want to say hello?
                         I&apos;d love to hear from you.
                     </h4>
@@ -30,7 +32,11 @@ const Contact = () => {
                 <div className='grid lg:grid-cols-5 gap-8'>
                     {/* Contact Info Cards */}
                     <div className='lg:col-span-2 space-y-6'>
-                        <div className='bg-[var(--project-card-bg)] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105'>
+                        <div
+                            className='bg-[var(--project-card-bg)] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105'
+                            data-aos='fade-right'
+                            data-aos-delay='100'
+                        >
                             <div className='flex items-center space-x-4'>
                                 <div className='w-12 h-12 bg-[var(--btn-color)] rounded-xl flex items-center justify-center shadow-md'>
                                     <Mail className='w-6 h-6 text-[var(--btn-text-color)]' />
@@ -46,7 +52,11 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className='bg-[var(--project-card-bg)] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105'>
+                        <div
+                            className='bg-[var(--project-card-bg)] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105'
+                            data-aos='fade-right'
+                            data-aos-delay='200'
+                        >
                             <div className='flex items-center space-x-4'>
                                 <div className='w-12 h-12 bg-[var(--btn-color)] rounded-xl flex items-center justify-center shadow-md'>
                                     <Phone className='w-6 h-6 text-[var(--btn-text-color)]' />
@@ -62,7 +72,11 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className='bg-[var(--project-card-bg)] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105'>
+                        <div
+                            className='bg-[var(--project-card-bg)] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105'
+                            data-aos='fade-right'
+                            data-aos-delay='300'
+                        >
                             <div className='flex items-center space-x-4'>
                                 <div className='w-12 h-12 bg-[var(--btn-color)] rounded-xl flex items-center justify-center shadow-md'>
                                     <MapPin className='w-6 h-6 text-[var(--btn-text-color)]' />
@@ -80,9 +94,14 @@ const Contact = () => {
                     </div>
 
                     {/* Contact Form */}
-                    <div className='lg:col-span-3'>
+                    <div
+                        className='lg:col-span-3'
+                        data-aos='fade-left'
+                        data-aos-delay='400'
+                    >
                         <div className='bg-[var(--project-card-bg)] p-8 rounded-3xl shadow-xl backdrop-blur-sm h-full'>
                             <div className='space-y-6'>
+                                {/* Name */}
                                 <div className='space-y-2'>
                                     <label
                                         htmlFor='name'
@@ -105,6 +124,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
+                                {/* Email */}
                                 <div className='space-y-2'>
                                     <label
                                         htmlFor='email'
@@ -127,6 +147,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
+                                {/* Message */}
                                 <div className='space-y-2'>
                                     <label
                                         htmlFor='message'
@@ -149,6 +170,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
+                                {/* Submit Button */}
                                 <button
                                     type='submit'
                                     className='w-full py-3 md:py-4 px-6 bg-[var(--btn-color)] text-[var(--btn-text-color)] font-semibold rounded-xl hover:opacity-90 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-[var(--btn-color)] focus:ring-offset-2 focus:ring-offset-[var(--background-color)] transition-all duration-300 active:scale-[0.98] shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group'

@@ -342,18 +342,31 @@ const Certificate = () => {
             className='py-16 px-4 bg-[var(--background-color)]'
         >
             <div className='max-w-6xl mx-auto'>
-                <div className='text-center mb-12'>
+                {/* Heading */}
+                <div
+                    className='text-center mb-12'
+                    data-aos='fade-up'
+                    data-aos-delay='100'
+                >
                     <h2 className='text-4xl font-bold text-center mb-4 text-[var(--text-color)]'>
                         Licenses & Certifications
                     </h2>
-                    <h4 className='text-xl text-[var(--form-text-color)] max-w-3xl mt-3 mx-auto'>
+                    <h4
+                        className='text-xl text-[var(--form-text-color)] max-w-3xl mt-3 mx-auto'
+                        data-aos='fade-up'
+                        data-aos-delay='200'
+                    >
                         Professional certifications I've earned through
                         coursework and examinations
                     </h4>
                 </div>
 
                 {/* Filter Buttons */}
-                <div className='flex flex-wrap justify-center gap-2 mb-8'>
+                <div
+                    className='flex flex-wrap justify-center gap-2 mb-8'
+                    data-aos='fade-up'
+                    data-aos-delay='300'
+                >
                     {filterButtons.map((button) => (
                         <button
                             key={button.id}
@@ -371,9 +384,12 @@ const Certificate = () => {
 
                 {/* Certificates Grid */}
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                    {filteredCertificates.map((cert) => (
+                    {filteredCertificates.map((cert, index) => (
                         <div
                             key={cert.id}
+                            data-aos='zoom-in-up'
+                            data-aos-delay={400 + index * 100}
+                            data-aos-duration='800'
                             className='bg-[var(--project-card-bg)] rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
                         >
                             <div className='flex items-center mb-4'>

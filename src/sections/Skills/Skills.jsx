@@ -261,20 +261,16 @@ const Skills = () => {
             style={{ backgroundColor: 'var(--background-color)' }}
         >
             <div className='max-w-7xl w-full mx-auto'>
-                <div className='text-center mb-16'>
+                <div
+                    className='text-center mb-16'
+                    data-aos='fade-up'
+                    data-aos-delay='100'
+                >
                     <h1
                         className='text-2xl md:text-2xl font-bold mb-5 relative inline-block'
                         style={{ color: 'var(--text-color)' }}
                     >
                         Skills & Technologies
-                        {/* <span
-                            className='absolute bottom-0 left-0 w-full h-1 rounded-full'
-                            style={{
-                                backgroundColor: 'var(--btn-color)',
-                                transform: 'scaleX(0.7)',
-                                transformOrigin: 'center',
-                            }}
-                        ></span> */}
                     </h1>
                     <p
                         className='mx-auto text-center'
@@ -288,6 +284,9 @@ const Skills = () => {
                     {skillCategories.map((category, index) => (
                         <div
                             key={index}
+                            data-aos='zoom-in-up'
+                            data-aos-delay={150 + index * 100}
+                            data-aos-duration='800'
                             className='relative rounded-xl p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg overflow-hidden group'
                             style={{
                                 backgroundColor: 'var(--project-card-bg)',

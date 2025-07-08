@@ -31,6 +31,8 @@ const Education = () => {
                 <h1
                     className='text-center mb-12 text-2xl md:text-3xl font-bold'
                     style={{ color: 'var(--text-color)' }}
+                    data-aos='fade-up'
+                    data-aos-delay='100'
                 >
                     Education Timeline
                 </h1>
@@ -46,6 +48,9 @@ const Education = () => {
                         <div
                             key={index}
                             className='relative mb-8 last:mb-0'
+                            data-aos='fade-up'
+                            data-aos-delay={200 + index * 100}
+                            data-aos-duration='800'
                         >
                             <div className='flex items-start'>
                                 {/* Icon */}
